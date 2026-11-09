@@ -1,0 +1,43 @@
+// A text field in the editor or the Test tab, with a Pick button for fields that take a game asset (the
+// model hides it otherwise). No fixed height: the row grows with a wrapped label or hint, as the game's own field rows do.
+$C = "../Common.ui";
+
+Group {
+  LayoutMode: Top;
+  Anchor: (Bottom: 6);
+
+  Group {
+    LayoutMode: Left;
+
+    Label #Label {
+      Text: "";
+      Anchor: (Width: 200, Right: 12);
+      Style: (...$C.@DefaultLabelStyle, VerticalAlignment: Center, Wrap: true);
+    }
+
+    $C.@TextField #Input {
+      @Anchor = (Right: 4);
+      FlexWeight: 1;
+    }
+
+    $C.@SmallSecondaryTextButton #Pick {
+      @Text = "Pick";
+      @Anchor = (Width: 64, Top: 4, Left: 4);
+      Padding: (Horizontal: 0);
+    }
+  }
+
+  // Under the field, so a long hint wraps across the row's width and the row grows with it (CommandDeck's
+  // finding: with a Left anchor instead of the group's padding, the second line went under the next row).
+  Group {
+    LayoutMode: Top;
+    Padding: (Left: 212);
+
+    Label #Hint {
+      Text: "";
+      Visible: false;
+      Anchor: (Top: 2);
+      Style: (FontSize: 13, TextColor: #878e9c, Wrap: true);
+    }
+  }
+}

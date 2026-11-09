@@ -1,0 +1,1884 @@
+{
+ "format": "spellcrafter.vessels",
+ "format_version": "1.0",
+ "mod": {
+  "id": "Hledjolf:SpellCrafter",
+  "name": "SpellCrafter",
+  "version": "1.0.0"
+ },
+ "game": "hytale",
+ "vessels": [
+  {
+   "id": "Hledjolf:SpellCrafter/wand_flame_bolt_lesser",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/flame_bolt_lesser",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Copper",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 2
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_FlameBoltLesser",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_flame_bolt_lesser",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/flame_bolt_lesser",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_FlameBoltLesser",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_flame_bolt",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/flame_bolt",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Iron",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 4
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_FlameBolt",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_flame_bolt",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/flame_bolt",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_FlameBolt",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_flame_bolt_greater",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/flame_bolt_greater",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Thorium",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 5
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 6
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_FlameBoltGreater",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_flame_bolt_greater",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/flame_bolt_greater",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_FlameBoltGreater",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_flame_bolt_grand",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/flame_bolt_grand",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Adamantite",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 8
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 8
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_FlameBoltGrand",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_flame_bolt_grand",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/flame_bolt_grand",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_FlameBoltGrand",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_kindle",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/kindle",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Copper",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 2
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_Kindle",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_kindle",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/kindle",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Kindle",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_shock",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/shock",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Copper",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Lightning_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Yellow",
+      "count": 2
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_Shock",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "lightning"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_shock",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/shock",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Lightning_Essence",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Shock",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "lightning"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_venom",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/venom",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Thorium",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 5
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 6
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_Venom",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "poison"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_venom",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/venom",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Venom",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "poison"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_chill",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/chill",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Thorium",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Ice_Essence",
+      "count": 5
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Blue",
+      "count": 6
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_Chill",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "frost"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_chill",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/chill",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Ice_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Blue",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Chill",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "frost"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_frost_lock",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/frost_lock",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Ice_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Blue",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_FrostLock",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "frost"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_shocking_grasp",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/shocking_grasp",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Lightning_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Yellow",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_ShockingGrasp",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "lightning"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_thunderclap",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/thunderclap",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Lightning_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Yellow",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Thunderclap",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "lightning"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_petrify",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/petrify",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Petrify",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "control"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_expose",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/expose",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Expose",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "control"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_enfeeble",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/enfeeble",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Enfeeble",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "control"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_slow",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/slow",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Slow",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "control"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_heal_lesser",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/heal_lesser",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_HealLesser",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "healing"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_heal_lesser",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/heal_lesser",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_HealLesser",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "healing"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_heal",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/heal",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_White",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_Heal",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "healing"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_heal",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/heal",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_White",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Heal",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "healing"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_heal_greater",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/heal_greater",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_White",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_HealGreater",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "healing"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_heal_greater",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/heal_greater",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_White",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_HealGreater",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "healing"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_heal_grand",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/heal_grand",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_White",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_HealGrand",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "healing"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_heal_grand",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/heal_grand",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_White",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_HealGrand",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "healing"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_fire_ward_lesser",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/fire_ward_lesser",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_FireWardLesser",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "abjuration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_fire_ward_lesser",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/fire_ward_lesser",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_FireWardLesser",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "abjuration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_fire_ward",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/fire_ward",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_FireWard",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "abjuration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_fire_ward",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/fire_ward",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_FireWard",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "abjuration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_fire_ward_greater",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/fire_ward_greater",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 4
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_FireWardGreater",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "abjuration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_fire_ward_greater",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/fire_ward_greater",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_FireWardGreater",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "abjuration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_battle_fury_lesser",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/battle_fury_lesser",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_BattleFuryLesser",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "alteration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_battle_fury_lesser",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/battle_fury_lesser",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_BattleFuryLesser",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "alteration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_battle_fury",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/battle_fury",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_BattleFury",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "alteration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_battle_fury",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/battle_fury",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_BattleFury",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "alteration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_battle_fury_greater",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/battle_fury_greater",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 4
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_BattleFuryGreater",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "alteration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_battle_fury_greater",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/battle_fury_greater",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_BattleFuryGreater",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "alteration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/potion_mana_draught",
+   "kind": "potion",
+   "spell": "Hledjolf:SpellCrafter/mana_draught",
+   "recipe": {
+    "bench": "Alchemybench",
+    "category": "Alchemy_Potions",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Blue",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Potion_ManaDraught",
+     "base_model": "hytale:Potion_Health",
+     "hue_from_school": "utility"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_fireball",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/fireball",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Adamantite",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 8
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 8
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_Fireball",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_fireball",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/fireball",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Fire_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Red",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Fireball",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "fire"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_darkness",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/darkness",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Thorium",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 5
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 6
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_Darkness",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "poison"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_darkness",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/darkness",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Darkness",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "poison"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_vampiric_touch",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/vampiric_touch",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Thorium",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 5
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 6
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_VampiricTouch",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "control"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_vampiric_touch",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/vampiric_touch",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_VampiricTouch",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "control"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_prismatic_spray",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/prismatic_spray",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Adamantite",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Lightning_Essence",
+      "count": 8
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Yellow",
+      "count": 8
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_PrismaticSpray",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "evocation"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_prismatic_spray",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/prismatic_spray",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Stormsilk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Lightning_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Yellow",
+      "count": 3
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_PrismaticSpray",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "evocation"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_shadow_bolt",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/shadow_bolt",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Iron",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 3
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 4
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_ShadowBolt",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "shadow"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_shadow_bolt",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/shadow_bolt",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Void_Essence",
+      "count": 1
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Purple",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_ShadowBolt",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "shadow"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_smite",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/smite",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Thorium",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 5
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_White",
+      "count": 6
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_Smite",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "holy"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_smite",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/smite",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Life_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_White",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Smite",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "holy"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_magelight",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/magelight",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Copper",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Blue",
+      "count": 2
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_Magelight",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "utility"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_magelight",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/magelight",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Linen",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 1
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_Magelight",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "utility"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/wand_ghost_form",
+   "kind": "wand",
+   "spell": "Hledjolf:SpellCrafter/ghost_form",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Stick",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Bar_Thorium",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 5
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 6
+     }
+    ],
+    "output": 1
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Wand_GhostForm",
+     "base_model": "hytale:Weapon_Staff_Wood",
+     "hue_from_school": "alteration"
+    }
+   }
+  },
+  {
+   "id": "Hledjolf:SpellCrafter/scroll_ghost_form",
+   "kind": "scroll",
+   "spell": "Hledjolf:SpellCrafter/ghost_form",
+   "recipe": {
+    "bench": "Arcanebench",
+    "category": "Arcane_Misc",
+    "inputs": [
+     {
+      "item": "hytale:Ingredient_Fabric_Scrap_Silk",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Water_Essence",
+      "count": 2
+     },
+     {
+      "item": "hytale:Ingredient_Crystal_Cyan",
+      "count": 2
+     }
+    ],
+    "output": 3
+   },
+   "bindings": {
+    "hytale": {
+     "item": "SpellCrafter_Scroll_GhostForm",
+     "base_model": "hytale:Deco_Scroll",
+     "hue_from_school": "alteration"
+    }
+   }
+  }
+ ]
+}

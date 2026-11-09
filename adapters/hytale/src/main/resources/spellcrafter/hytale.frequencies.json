@@ -1,0 +1,8 @@
+{
+  "format": "spellcrafter.frequencies",
+  "format_version": "1.0",
+  "game": "hytale",
+  "weather": {"core:clear": 0.6, "core:precipitation": 0.3, "core:rain": 0.25, "core:snow": 0.05, "core:storm": 0.1, "core:fog": 0.1},
+  "time_of_day": "hours",
+  "is_night": 0.4
+}

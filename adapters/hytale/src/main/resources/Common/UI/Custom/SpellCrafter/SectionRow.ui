@@ -1,0 +1,8 @@
+// A heading over a block of fields or notes on the right: "Time and stacking", "Parts", "On hytale".
+$C = "../Common.ui";
+
+Label {
+  Text: "";
+  Anchor: (Top: 10, Bottom: 6);
+  Style: (FontSize: 16, RenderBold: true, TextColor: #c9e3ff, Wrap: true);
+}

@@ -1,0 +1,13 @@
+{
+  "Group": "Hledjolf",
+  "Name": "SpellCrafter",
+  "Version": "${version}",
+  "Description": "Spells as data: scrolls, potions and wands, crafted at the arcane and alchemy benches.",
+  "Authors": [
+    { "Name": "Hledjolf" }
+  ],
+  "Main": "spellcrafter.hytale.SpellCrafterPlugin",
+  "ServerVersion": "*",
+  "IncludesAssetPack": true,
+  "Dependencies": { "Hledjolf:BuffEffects": "*", "Hledjolf:CommandDeck": "*", "ModSettingsManager:ModSettingsManager": "*" }
+}

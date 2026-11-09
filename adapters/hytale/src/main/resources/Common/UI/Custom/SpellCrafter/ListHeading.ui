@@ -1,0 +1,9 @@
+// The heading over a block of the list on the left: a mod, or "Hytale". It grows with
+// its text, so a long category wraps instead of running under the buttons.
+$C = "../Common.ui";
+
+Label {
+  Text: "";
+  Anchor: (Top: 8, Bottom: 4);
+  Style: (FontSize: 14, RenderBold: true, TextColor: #c9e3ff, Wrap: true);
+}

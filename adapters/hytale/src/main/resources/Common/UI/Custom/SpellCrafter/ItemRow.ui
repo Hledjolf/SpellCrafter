@@ -1,0 +1,20 @@
+// One line with a button: an application in the Active tab ("ghostified · 42 s left · by SpellCrafter") and
+// its Remove. The text wraps and the row grows with it.
+$C = "../Common.ui";
+
+Group {
+  LayoutMode: Left;
+  Anchor: (Bottom: 4);
+
+  Label #Label {
+    Text: "";
+    FlexWeight: 1;
+    Style: (FontSize: 14, TextColor: #ffffff(0.9), VerticalAlignment: Center, Wrap: true);
+  }
+
+  $C.@SmallSecondaryTextButton #Button {
+    @Text = "Remove";
+    @Anchor = (Width: 90, Top: 4, Left: 8);
+    Padding: (Horizontal: 0);
+  }
+}

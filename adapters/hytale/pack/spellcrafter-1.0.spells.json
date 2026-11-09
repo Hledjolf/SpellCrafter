@@ -1,0 +1,1642 @@
+{
+ "format": "spellcrafter.spells",
+ "format_version": "1.0",
+ "mod": {
+  "id": "Hledjolf:SpellCrafter",
+  "name": "SpellCrafter",
+  "version": "1.0.0"
+ },
+ "game": "hytale",
+ "spells": [
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/flame_bolt_lesser",
+   "name": "Lesser Flame Bolt",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:fire"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 1.5
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/flame_bolt",
+     "params": {
+      "strength": 0.65
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 7
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/flame_bolt",
+   "name": "Flame Bolt",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:fire"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 1.5
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/flame_bolt",
+     "params": {
+      "strength": 1.01
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 12
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/flame_bolt_greater",
+   "name": "Greater Flame Bolt",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:fire"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 1.5
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/flame_bolt",
+     "params": {
+      "strength": 1.27
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 17
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/flame_bolt_grand",
+   "name": "Grand Flame Bolt",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:fire"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 1.5
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/flame_bolt",
+     "params": {
+      "strength": 1.58
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 22
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/kindle",
+   "name": "Kindle",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:fire"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 2.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Burn",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 6
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/shock",
+   "name": "Shock",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:lightning"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 2.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/shock",
+     "params": {
+      "strength": 1
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 5
+   },
+   "riders": [
+    {
+     "id": "storm",
+     "when": {
+      "type": "weather",
+      "category": [
+       "core:storm"
+      ]
+     },
+     "bonus_pct": {
+      "strength": 50
+     }
+    }
+   ]
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/venom",
+   "name": "Venom",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:poison"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 2.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Poison",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 16
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/chill",
+   "name": "Chill",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:frost"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Ability_Frost_Chill",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 10
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/frost_lock",
+   "name": "Frost Lock",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:frost"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Ability_Frost_Freeze",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 10
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/shocking_grasp",
+   "name": "Shocking Grasp",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:lightning"
+   ],
+   "delivery": {
+    "kind": "touch",
+    "params": {
+     "range": 3
+    }
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Hazard_Electric_Stun",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 26
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/thunderclap",
+   "name": "Thunderclap",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:lightning"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Hazard_Electric_Stun",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 26
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/petrify",
+   "name": "Petrify",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:control"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/petrify",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 26
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/expose",
+   "name": "Expose",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:control"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Vulnerable",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 13
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/enfeeble",
+   "name": "Enfeeble",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:control"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/weaken",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 20
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/slow",
+   "name": "Slow",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:control"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Slow",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 58
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/heal_lesser",
+   "name": "Lesser Heal",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:healing"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/mend",
+     "params": {
+      "strength": 0.26
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 7
+   },
+   "riders": [
+    {
+     "id": "dawn",
+     "when": {
+      "type": "time_of_day",
+      "from": 5,
+      "to": 8
+     },
+     "bonus_pct": {
+      "strength": 25
+     }
+    }
+   ]
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/heal",
+   "name": "Heal",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:healing"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/mend",
+     "params": {
+      "strength": 0.4
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 13
+   },
+   "riders": [
+    {
+     "id": "dawn",
+     "when": {
+      "type": "time_of_day",
+      "from": 5,
+      "to": 8
+     },
+     "bonus_pct": {
+      "strength": 25
+     }
+    }
+   ]
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/heal_greater",
+   "name": "Greater Heal",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:healing"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/mend",
+     "params": {
+      "strength": 0.5
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 17
+   },
+   "riders": [
+    {
+     "id": "dawn",
+     "when": {
+      "type": "time_of_day",
+      "from": 5,
+      "to": 8
+     },
+     "bonus_pct": {
+      "strength": 25
+     }
+    }
+   ]
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/heal_grand",
+   "name": "Grand Heal",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:healing"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/mend",
+     "params": {
+      "strength": 0.63
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 22
+   },
+   "riders": [
+    {
+     "id": "dawn",
+     "when": {
+      "type": "time_of_day",
+      "from": 5,
+      "to": 8
+     },
+     "bonus_pct": {
+      "strength": 25
+     }
+    }
+   ]
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/fire_ward_lesser",
+   "name": "Lesser Fire Ward",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:abjuration",
+    "spellcrafter:fire"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/fire_ward",
+     "params": {
+      "strength": 0.22
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 5
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/fire_ward",
+   "name": "Fire Ward",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:abjuration",
+    "spellcrafter:fire"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/fire_ward",
+     "params": {
+      "strength": 0.77
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 27
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/fire_ward_greater",
+   "name": "Greater Fire Ward",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:abjuration",
+    "spellcrafter:fire"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/fire_ward",
+     "params": {
+      "strength": 1.62
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 93
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/battle_fury_lesser",
+   "name": "Lesser Battle Fury",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:alteration"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/battle_fury",
+     "params": {
+      "strength": 0.37
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 5
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/battle_fury",
+   "name": "Battle Fury",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:alteration"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/battle_fury",
+     "params": {
+      "strength": 1.46
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 27
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/battle_fury_greater",
+   "name": "Greater Battle Fury",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:alteration"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/battle_fury",
+     "params": {
+      "strength": 3.82
+     },
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 92
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/mana_draught",
+   "name": "Mana Draught",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:utility"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 30.0
+   },
+   "payloads": [
+    {
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Mana_High",
+     "id": "p1"
+    }
+   ],
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-05",
+    "made_from": [
+     "sample",
+     "release-1.0"
+    ]
+   },
+   "cost": {
+    "mana": 30
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/fireball",
+   "name": "Fireball",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:fire",
+    "spellcrafter:evocation"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 25,
+     "burst.radius": 2
+    },
+    "burst": {
+     "affects": "others"
+    }
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 8.0
+   },
+   "payloads": [
+    {
+     "id": "blast",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/flame_bolt",
+     "params": {
+      "strength": 0.6
+     },
+     "target": "target"
+    },
+    {
+     "id": "burning",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Burn",
+     "target": "area"
+    }
+   ],
+   "cost": {
+    "mana": 22
+   },
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-07",
+    "made_from": [
+     "showcase",
+     "release-1.0"
+    ]
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/darkness",
+   "name": "Darkness",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:control",
+    "spellcrafter:poison"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 20,
+     "speed": 20
+    }
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "id": "rot",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Poison",
+     "target": "target"
+    },
+    {
+     "id": "snare",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Slow",
+     "target": "target"
+    }
+   ],
+   "cost": {
+    "mana": 16
+   },
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-07",
+    "made_from": [
+     "showcase",
+     "release-1.0"
+    ]
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/vampiric_touch",
+   "name": "Vampiric Touch",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:control",
+    "spellcrafter:healing"
+   ],
+   "delivery": {
+    "kind": "touch",
+    "params": {
+     "range": 3
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 6.0
+   },
+   "payloads": [
+    {
+     "id": "drain",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/drain_hit",
+     "params": {
+      "strength": 1
+     },
+     "target": "target"
+    },
+    {
+     "id": "mend",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/mend",
+     "params": {
+      "strength": 0.3
+     },
+     "target": "caster"
+    }
+   ],
+   "cost": {
+    "mana": 16
+   },
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-07",
+    "made_from": [
+     "showcase",
+     "release-1.0"
+    ]
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/prismatic_spray",
+   "name": "Prismatic Spray",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:evocation"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 12,
+     "speed": 30,
+     "burst.radius": 3
+    },
+    "burst": {
+     "affects": "others"
+    }
+   },
+   "cast": {
+    "time": 2.0,
+    "cooldown": 20.0
+   },
+   "payloads": [
+    {
+     "id": "red",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/flame_bolt",
+     "params": {
+      "strength": 0.3
+     },
+     "target": "area",
+     "pick": "ray"
+    },
+    {
+     "id": "orange",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Burn",
+     "target": "area",
+     "pick": "ray"
+    },
+    {
+     "id": "yellow",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/shock",
+     "params": {
+      "strength": 0.5
+     },
+     "target": "area",
+     "pick": "ray"
+    },
+    {
+     "id": "green",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Poison",
+     "target": "area",
+     "pick": "ray"
+    },
+    {
+     "id": "blue",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Ability_Frost_Freeze",
+     "params": {
+      "duration": 1
+     },
+     "target": "area",
+     "pick": "ray"
+    },
+    {
+     "id": "indigo",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/petrify",
+     "params": {
+      "duration": 1
+     },
+     "target": "area",
+     "pick": "ray"
+    },
+    {
+     "id": "violet",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "hytale:Vulnerable",
+     "target": "area",
+     "pick": "ray"
+    },
+    {
+     "id": "two_rays",
+     "pick": "ray",
+     "weight": 1,
+     "reroll": 2
+    }
+   ],
+   "cost": {
+    "mana": 24
+   },
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-07",
+    "made_from": [
+     "showcase",
+     "release-1.0"
+    ]
+   },
+   "picks": [
+    {
+     "id": "ray",
+     "rolls": 1
+    }
+   ]
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/shadow_bolt",
+   "name": "Shadow Bolt",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:shadow",
+    "spellcrafter:evocation"
+   ],
+   "delivery": {
+    "kind": "projectile",
+    "params": {
+     "range": 24,
+     "speed": 30
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 1.5
+   },
+   "payloads": [
+    {
+     "id": "p1",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/shadow_hit",
+     "params": {
+      "strength": 1.0
+     },
+     "target": "target"
+    }
+   ],
+   "cost": {
+    "mana": 12
+   },
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-07",
+    "made_from": [
+     "hytale-proven",
+     "release-1.0"
+    ]
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/smite",
+   "name": "Smite",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:holy",
+    "spellcrafter:evocation"
+   ],
+   "delivery": {
+    "kind": "touch",
+    "params": {
+     "range": 3
+    }
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 4.0
+   },
+   "payloads": [
+    {
+     "id": "p1",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/holy_hit",
+     "params": {
+      "strength": 1.25
+     },
+     "target": "target"
+    }
+   ],
+   "cost": {
+    "mana": 16
+   },
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-07",
+    "made_from": [
+     "hytale-proven",
+     "release-1.0"
+    ]
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/magelight",
+   "name": "Magelight",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:utility"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 1.0,
+    "cooldown": 10.0
+   },
+   "payloads": [
+    {
+     "id": "p1",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/magelight",
+     "target": "caster"
+    }
+   ],
+   "cost": {
+    "mana": 5
+   },
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-07",
+    "made_from": [
+     "hytale-proven",
+     "release-1.0"
+    ]
+   }
+  },
+  {
+   "format": "spellcrafter.spell",
+   "format_version": "1.0",
+   "id": "Hledjolf:SpellCrafter/ghost_form",
+   "name": "Ghost Form",
+   "origin": {
+    "kind": "native"
+   },
+   "categories": [
+    "spellcrafter:alteration"
+   ],
+   "delivery": {
+    "kind": "self",
+    "params": {}
+   },
+   "cast": {
+    "time": 1.5,
+    "cooldown": 60.0
+   },
+   "payloads": [
+    {
+     "id": "p1",
+     "provider": "BuffEffects",
+     "op": "apply",
+     "effect": "Hledjolf:SpellCrafter/ghost_form",
+     "target": "caster"
+    }
+   ],
+   "cost": {
+    "mana": 25
+   },
+   "provenance": {
+    "author": "Hledjolf",
+    "created": "2026-11-07",
+    "made_from": [
+     "hytale-proven",
+     "release-1.0"
+    ]
+   }
+  }
+ ]
+}

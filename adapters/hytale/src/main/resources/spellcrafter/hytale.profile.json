@@ -1,0 +1,8 @@
+{
+  "format": "spellcrafter.profile",
+  "format_version": "1.0",
+  "profile": "hytale/1",
+  "stages": ["flat", "increase"],
+  "game_version": "0.7.6",
+  "unsupported": { "more_pct": "increase" }
+}

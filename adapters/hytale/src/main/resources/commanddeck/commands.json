@@ -1,0 +1,191 @@
+{
+  "format": "commanddeck.commands",
+  "format_version": "1.0",
+  "mod": {
+    "id": "Hledjolf:SpellCrafter",
+    "name": "SpellCrafter",
+    "version": "1.0.0"
+  },
+  "commands": [
+    {
+      "name": "spell list",
+      "label": "List spells",
+      "description": "The loaded spells: name, school, mana and the vessels that hold them. The filter matches name, school or category.",
+      "category": "SpellCrafter",
+      "variants": [
+        {
+          "label": "Filtered",
+          "args": [
+            {
+              "name": "filter",
+              "type": "greedy_string",
+              "description": "Part of a name, a school (fire, frost) or a category."
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "line": "/spell list fire",
+          "explanation": "Every fire spell."
+        }
+      ]
+    },
+    {
+      "name": "spell info",
+      "label": "Spell details",
+      "description": "One spell's details: school, mana, cast time, cooldown, delivery and each effect.",
+      "category": "SpellCrafter",
+      "args": [
+        {
+          "name": "spell",
+          "type": "greedy_string",
+          "description": "The spell's name or id, such as Flame Bolt."
+        }
+      ],
+      "examples": [
+        {
+          "line": "/spell info Fireball",
+          "explanation": "Fireball's burst and its two effects."
+        }
+      ]
+    },
+    {
+      "name": "spell editor",
+      "label": "Spell editor",
+      "description": "Opens the spell editor window: build a spell from a template, see its stat block, grade, zone and mana as you go, and save it to your own spell pack.",
+      "category": "SpellCrafter",
+      "permission": "spellcrafter.editor"
+    },
+    {
+      "name": "spell give",
+      "label": "Give vessels",
+      "description": "Gives a player scrolls, potions or wands. For testing and for rewards.",
+      "category": "SpellCrafter",
+      "variants": [
+        {
+          "label": "Several",
+          "args": [
+            {
+              "name": "player",
+              "type": "player"
+            },
+            {
+              "name": "vessel",
+              "type": "string"
+            },
+            {
+              "name": "count",
+              "type": "int",
+              "min": 1,
+              "max": 64
+            }
+          ]
+        }
+      ],
+      "permission": "spellcrafter.give",
+      "args": [
+        {
+          "name": "player",
+          "type": "player",
+          "description": "Who gets them."
+        },
+        {
+          "name": "vessel",
+          "type": "string",
+          "description": "The vessel's id, such as scroll_flame_bolt, or its item id."
+        }
+      ],
+      "examples": [
+        {
+          "line": "/spell give {self} scroll_fireball 3",
+          "explanation": "Three Fireball scrolls for yourself."
+        }
+      ]
+    },
+    {
+      "name": "spell cast",
+      "label": "Cast any spell",
+      "description": "Casts a spell with no vessel, mana or cooldown, at what you look at or at a named player. For testing.",
+      "category": "SpellCrafter",
+      "variants": [
+        {
+          "label": "At a player",
+          "args": [
+            {
+              "name": "spell",
+              "type": "string"
+            },
+            {
+              "name": "player",
+              "type": "player",
+              "description": "Cast at this player instead."
+            }
+          ]
+        }
+      ],
+      "danger": "confirm",
+      "permission": "spellcrafter.cast.any",
+      "args": [
+        {
+          "name": "spell",
+          "type": "string",
+          "description": "The spell's id, such as flame_bolt."
+        }
+      ],
+      "examples": [
+        {
+          "line": "/spell cast prismatic_spray",
+          "explanation": "A Prismatic Spray at what you look at."
+        }
+      ]
+    },
+    {
+      "name": "spell cooldowns",
+      "label": "Cooldowns",
+      "description": "Each spell's cooldown left. Another player's needs spellcrafter.admin.",
+      "category": "SpellCrafter",
+      "variants": [
+        {
+          "label": "Another player's",
+          "args": [
+            {
+              "name": "player",
+              "type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "spell debug",
+      "label": "Debug my casts",
+      "description": "Your own casts print their rider report, seed and rolls in chat.",
+      "category": "SpellCrafter",
+      "variants": [
+        {
+          "label": "On or off",
+          "args": [
+            {
+              "name": "state",
+              "type": "enum",
+              "options": [
+                "on",
+                "off"
+              ]
+            }
+          ]
+        }
+      ],
+      "permission": "spellcrafter.debug"
+    },
+    {
+      "name": "spell reload",
+      "label": "Reload spells",
+      "description": "Reloads spell packs, vessels, frequencies and settings, and logs what changed.",
+      "category": "SpellCrafter",
+      "danger": "confirm",
+      "permission": "spellcrafter.admin"
+    }
+  ]
+}

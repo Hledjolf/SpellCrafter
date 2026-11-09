@@ -1,0 +1,313 @@
+{
+  "format": 1,
+  "plugin": "Hledjolf:SpellCrafter",
+  "title": "SpellCrafter",
+  "config": "config.json",
+  "sections": [
+    {
+      "id": "caps",
+      "label": "Caps"
+    },
+    {
+      "id": "overrides",
+      "label": "Overrides"
+    },
+    {
+      "id": "world",
+      "label": "World"
+    },
+    {
+      "id": "combat",
+      "label": "Combat"
+    },
+    {
+      "id": "content",
+      "label": "Content"
+    }
+  ],
+  "keys": {
+    "BonusPct": {
+      "label": "Most bonus % on one number",
+      "section": "caps",
+      "type": "int",
+      "min": 0,
+      "max": 10000,
+      "step": 1,
+      "default": 200,
+      "restart": false,
+      "description": "The sum of a spell's riders' bonus_pct on one param."
+    },
+    "MorePctEach": {
+      "label": "Largest single multiplier (%)",
+      "section": "caps",
+      "type": "int",
+      "min": 0,
+      "max": 10000,
+      "step": 1,
+      "default": 50,
+      "restart": false
+    },
+    "MorePctPerParam": {
+      "label": "Most multipliers per number",
+      "section": "caps",
+      "type": "int",
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "default": 2,
+      "restart": false
+    },
+    "AddedPayloads": {
+      "label": "Most payloads riders may add",
+      "section": "caps",
+      "type": "int",
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "default": 3,
+      "restart": false
+    },
+    "RidersPerCast": {
+      "label": "Most gates and riders per spell",
+      "section": "caps",
+      "type": "int",
+      "min": 0,
+      "max": 256,
+      "step": 1,
+      "default": 16,
+      "restart": false
+    },
+    "CircumstancesPerCast": {
+      "label": "Most circumstances per cast",
+      "section": "caps",
+      "type": "int",
+      "min": 0,
+      "max": 256,
+      "step": 1,
+      "default": 8,
+      "restart": false
+    },
+    "BurstTargets": {
+      "label": "Most targets in one burst",
+      "section": "caps",
+      "type": "int",
+      "min": 1,
+      "max": 256,
+      "step": 1,
+      "default": 16,
+      "restart": false,
+      "description": "Past this, the nearest are kept."
+    },
+    "BurstRadius": {
+      "label": "Largest burst radius (blocks)",
+      "section": "caps",
+      "type": "float",
+      "min": 0,
+      "max": 64,
+      "step": 0.5,
+      "default": 8.0,
+      "restart": false
+    },
+    "ConditionDepth": {
+      "label": "Deepest nesting of conditions",
+      "section": "caps",
+      "type": "int",
+      "min": 1,
+      "max": 16,
+      "step": 1,
+      "default": 4,
+      "restart": false
+    },
+    "GroupDepth": {
+      "label": "Deepest nesting of spell groups",
+      "section": "caps",
+      "type": "int",
+      "min": 1,
+      "max": 16,
+      "step": 1,
+      "default": 3,
+      "restart": false
+    },
+    "RecheckMinMs": {
+      "label": "Shortest recheck interval (ms)",
+      "section": "caps",
+      "type": "int",
+      "min": 50,
+      "max": 60000,
+      "step": 50,
+      "default": 1000,
+      "restart": false
+    },
+    "IgnoreGates": {
+      "label": "Ignore these requirements",
+      "section": "overrides",
+      "type": "string",
+      "default": "",
+      "restart": false,
+      "description": "Comma-separated. <spell id>#<requirement id>."
+    },
+    "IgnoreGateTypes": {
+      "label": "Ignore requirements of these types",
+      "section": "overrides",
+      "type": "string",
+      "default": "",
+      "restart": false,
+      "description": "Comma-separated. Condition types, such as weather."
+    },
+    "IgnoreUnknownGates": {
+      "label": "Ignore requirements nobody can answer",
+      "section": "overrides",
+      "type": "bool",
+      "default": false,
+      "restart": false
+    },
+    "IgnoreComponents": {
+      "label": "Ignore these material components",
+      "section": "overrides",
+      "type": "string",
+      "default": "",
+      "restart": false,
+      "description": "Comma-separated. <spell id>#<component id>."
+    },
+    "IgnoreComponentItems": {
+      "label": "Ignore components of these items",
+      "section": "overrides",
+      "type": "string",
+      "default": "",
+      "restart": false,
+      "description": "Comma-separated. Item ids."
+    },
+    "IgnoreFoci": {
+      "label": "Ignore foci (components that aren't consumed)",
+      "section": "overrides",
+      "type": "bool",
+      "default": false,
+      "restart": false
+    },
+    "IgnoreAllComponents": {
+      "label": "Ignore all material components",
+      "section": "overrides",
+      "type": "bool",
+      "default": false,
+      "restart": false
+    },
+    "CircumstancesOff": {
+      "label": "Circumstances off",
+      "section": "overrides",
+      "type": "string",
+      "default": "",
+      "restart": false,
+      "description": "Comma-separated. Circumstance ids."
+    },
+    "CircumstanceModsOff": {
+      "label": "Circumstances off, by mod",
+      "section": "overrides",
+      "type": "string",
+      "default": "",
+      "restart": false,
+      "description": "Comma-separated. Mod ids."
+    },
+    "WeatherClear": {
+      "label": "Share of the time: clear weather",
+      "section": "world",
+      "type": "float",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.6,
+      "restart": false,
+      "description": "Prices weather riders and requirements."
+    },
+    "WeatherPrecipitation": {
+      "label": "Share of the time: rain or snow",
+      "section": "world",
+      "type": "float",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.3,
+      "restart": false
+    },
+    "WeatherRain": {
+      "label": "Share of the time: rain",
+      "section": "world",
+      "type": "float",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.25,
+      "restart": false
+    },
+    "WeatherSnow": {
+      "label": "Share of the time: snow",
+      "section": "world",
+      "type": "float",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.05,
+      "restart": false
+    },
+    "WeatherStorm": {
+      "label": "Share of the time: storm",
+      "section": "world",
+      "type": "float",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.1,
+      "restart": false
+    },
+    "WeatherFog": {
+      "label": "Share of the time: fog",
+      "section": "world",
+      "type": "float",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.1,
+      "restart": false
+    },
+    "NightShare": {
+      "label": "Share of the time: night",
+      "section": "world",
+      "type": "float",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.4,
+      "restart": false
+    },
+    "BurstsHitPlayers": {
+      "label": "Bursts and enemies spells may hit players",
+      "section": "combat",
+      "type": "enum",
+      "options": [
+        "follow_pvp",
+        "always",
+        "never"
+      ],
+      "default": "follow_pvp",
+      "restart": false,
+      "description": "follow_pvp: only where the world's PvP setting is on."
+    },
+    "InterruptDistance": {
+      "label": "Moving this far interrupts a cast (blocks)",
+      "section": "combat",
+      "type": "float",
+      "min": 0,
+      "max": 16,
+      "step": 0.1,
+      "default": 0.5,
+      "restart": false
+    },
+    "DisabledPacks": {
+      "label": "Spell packs off, by mod",
+      "section": "content",
+      "type": "string",
+      "default": "",
+      "restart": false,
+      "description": "Comma-separated. Mod ids, such as Hledjolf:SpellCrafter."
+    }
+  }
+}

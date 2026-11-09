@@ -1,0 +1,157 @@
+// SpellCrafter: the spell editor window (design/window.md). Copied from BuffEffects' window, so the two editors look
+// and behave alike: tabs on top; the list on the left (spells, the draft's effects, or the effect picker); the stat
+// block and readout in the middle; the fields and buttons on the right. Rows are appended into #Rows and the buttons
+// into #Footer from the other documents in this folder. The layout is CommandDeck's window's.
+// A label that wraps never has a fixed height, here or in a row: it grows with its text instead of
+// overlapping what's under it.
+$C = "../Common.ui";
+
+$C.@PageOverlay {}
+
+$C.@Container {
+  Anchor: (Width: 1440, Height: 800);
+
+  #Title {
+    Group {
+      $C.@Title {
+        @Text = "SpellCrafter";
+      }
+    }
+  }
+
+  #Content {
+    LayoutMode: Top;
+
+    Group #Tabs {
+      LayoutMode: Left;
+      Anchor: (Height: 40, Bottom: 6);
+
+      $C.@SmallSecondaryTextButton #TabSpells {
+        @Text = "Spells";
+        @Anchor = (Width: 160, Right: 6);
+      }
+
+      $C.@SmallSecondaryTextButton #TabEditor {
+        @Text = "Editor";
+        @Anchor = (Width: 160, Right: 6);
+      }
+
+      $C.@SmallSecondaryTextButton #TabTry {
+        @Text = "Try";
+        @Anchor = (Width: 160, Right: 6);
+      }
+    }
+
+    Group #Body {
+      FlexWeight: 1;
+      LayoutMode: Left;
+
+      Group #Left {
+        Anchor: (Width: 300);
+        LayoutMode: Top;
+        Padding: (Right: 12);
+
+        $C.@TextField #Search {
+          @Anchor = (Bottom: 6);
+          PlaceholderText: "Search";
+        }
+
+        // "Show:" says this is the filter, not a second search box. One word that never wraps, so the row's
+        // fixed height is safe. The dropdown takes the rest of the 288-pixel column: 288 - 56 - 4 = 228. Its
+        // width is set here, not by FlexWeight or @Anchor, because Common.ui's @DropdownBox always sets
+        // Width: 330, which pushed it over the label and into the right pane.
+        Group #FilterRow {
+          LayoutMode: Left;
+          Anchor: (Height: 32, Bottom: 6);
+
+          Label #FilterLabel {
+            Text: "Show:";
+            Anchor: (Width: 56, Right: 4);
+            Style: (...$C.@DefaultLabelStyle, VerticalAlignment: Center);
+          }
+
+          $C.@DropdownBox #Filter {
+            Anchor: (Width: 228, Height: 32);
+
+            Style: (
+              ...$C.@DefaultDropdownBoxStyle,
+              LabelStyle: (...$C.@DefaultDropdownBoxLabelStyle, RenderUppercase: false),
+              EntryLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, RenderUppercase: false),
+              NoItemsLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, TextColor: #b7cedd(0.5), RenderUppercase: false),
+              SelectedEntryLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, RenderBold: true, RenderUppercase: false)
+            );
+          }
+        }
+
+        Label #Count {
+          Text: "";
+          Anchor: (Height: 20, Bottom: 4);
+          Style: (FontSize: 13, TextColor: #878e9c, VerticalAlignment: Center);
+        }
+
+        Group #List {
+          FlexWeight: 1;
+          LayoutMode: TopScrolling;
+          ScrollbarStyle: $C.@DefaultScrollbarStyle;
+        }
+      }
+
+      // The stat block (window.md section 2): read-only, regenerated after every edit, about 20 lines for a big
+      // spell, so it scrolls. The readout sits under it.
+      Group #Middle {
+        Anchor: (Width: 380);
+        LayoutMode: TopScrolling;
+        ScrollbarStyle: $C.@DefaultScrollbarStyle;
+        Padding: (Right: 12);
+
+        Label #Preview {
+          Text: "";
+          Style: (FontSize: 14, TextColor: #c9e3ff, Wrap: true);
+        }
+
+        Label #PreviewNote {
+          Text: "";
+          Anchor: (Top: 8);
+          Style: (FontSize: 13, TextColor: #96a9be, Wrap: true);
+        }
+      }
+
+      Group #Right {
+        FlexWeight: 1;
+        LayoutMode: Top;
+
+        Label #Heading {
+          Text: "";
+          Anchor: (Height: 30);
+          Style: (FontSize: 22, RenderBold: true, VerticalAlignment: Center);
+        }
+
+        Label #Meta {
+          Text: "";
+          Anchor: (Bottom: 6);
+          Style: (FontSize: 13, TextColor: #878e9c, VerticalAlignment: Center, Wrap: true);
+        }
+
+        Group #Rows {
+          FlexWeight: 1;
+          LayoutMode: TopScrolling;
+          ScrollbarStyle: $C.@DefaultScrollbarStyle;
+          Padding: (Right: 8);
+        }
+
+        Label #Status {
+          Text: "";
+          Anchor: (Top: 4);
+          Style: (FontSize: 14, TextColor: #e8a93b, VerticalAlignment: Center, Wrap: true);
+        }
+
+        Group #Footer {
+          Anchor: (Height: 48, Top: 4);
+          LayoutMode: Top;
+        }
+      }
+    }
+  }
+}
+
+$C.@BackButton {}

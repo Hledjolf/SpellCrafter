@@ -1,0 +1,21 @@
+// One entry in the list on the left: an effect, a target or an asset to pick. The selected one is disabled.
+// A plain Button with a Label inside (vanilla's SubcommandCard.ui does the same), not a TextButton: the
+// TextButton template is fixed at 32 px and cuts long text, while this one wraps and grows a line at a time.
+// It looks like $C.@SmallSecondaryTextButton: the same backgrounds, sounds and label style.
+$C = "../Common.ui";
+
+Group {
+  LayoutMode: Top;
+  Anchor: (Bottom: 3);
+
+  Button #Button {
+    LayoutMode: Top;
+    Padding: (Horizontal: 16, Vertical: 7);
+    Style: (...$C.@SecondaryButtonStyle);
+
+    Label #Label {
+      Text: "";
+      Style: (...$C.@SmallSecondaryButtonLabelStyle, Wrap: true, ShrinkTextToFit: false);
+    }
+  }
+}

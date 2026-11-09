@@ -1,0 +1,41 @@
+// A true or false field: a flag in the editor or the Test tab. No fixed height:
+// the row grows with a wrapped label or hint.
+$C = "../Common.ui";
+
+Group {
+  LayoutMode: Top;
+  Anchor: (Bottom: 6);
+
+  Group {
+    LayoutMode: Left;
+
+    Label #Label {
+      Text: "";
+      Anchor: (Width: 200, Right: 12);
+      Style: (...$C.@DefaultLabelStyle, VerticalAlignment: Center, Wrap: true);
+    }
+
+    Group {
+      Anchor: (Width: 40, Height: 40);
+
+      $C.@CheckBox #Input {
+        Anchor: (Width: 26, Height: 26, Left: 0, Top: 7);
+      }
+    }
+  }
+
+  // Under the field, so a long hint wraps across the row's width and the row grows with it. The indent is
+  // the group's padding, not the label's Left anchor: with the anchor, the row was measured for the full
+  // width, the text wrapped narrower, and its second line went under the next row.
+  Group {
+    LayoutMode: Top;
+    Padding: (Left: 212);
+
+    Label #Hint {
+      Text: "";
+      Visible: false;
+      Anchor: (Top: 2);
+      Style: (FontSize: 13, TextColor: #878e9c, Wrap: true);
+    }
+  }
+}

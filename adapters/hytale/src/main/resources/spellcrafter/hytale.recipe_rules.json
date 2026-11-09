@@ -1,0 +1,153 @@
+{
+  "format": "spellcrafter.recipe_rules",
+  "format_version": "1.0",
+  "game": "hytale",
+  "tiers": {
+    "start": 0,
+    "1": 1,
+    "2-3": 2,
+    "4": 3
+  },
+  "schools": {
+    "fire": {
+      "essence": "hytale:Ingredient_Fire_Essence",
+      "crystal": "hytale:Ingredient_Crystal_Red"
+    },
+    "frost": {
+      "essence": "hytale:Ingredient_Ice_Essence",
+      "crystal": "hytale:Ingredient_Crystal_Blue"
+    },
+    "lightning": {
+      "essence": "hytale:Ingredient_Lightning_Essence",
+      "crystal": "hytale:Ingredient_Crystal_Yellow"
+    },
+    "poison": {
+      "essence": "hytale:Ingredient_Void_Essence",
+      "crystal": "hytale:Ingredient_Crystal_Purple"
+    },
+    "control": {
+      "essence": "hytale:Ingredient_Void_Essence",
+      "crystal": "hytale:Ingredient_Crystal_Purple"
+    },
+    "healing": {
+      "essence": "hytale:Ingredient_Life_Essence",
+      "crystal": "hytale:Ingredient_Crystal_White"
+    },
+    "abjuration": {
+      "essence": "hytale:Ingredient_Water_Essence",
+      "crystal": "hytale:Ingredient_Crystal_Cyan"
+    },
+    "alteration": {
+      "essence": "hytale:Ingredient_Water_Essence",
+      "crystal": "hytale:Ingredient_Crystal_Cyan"
+    },
+    "utility": {
+      "essence": "hytale:Ingredient_Water_Essence",
+      "crystal": "hytale:Ingredient_Crystal_Blue"
+    }
+  },
+  "default_school": "utility",
+  "kinds": {
+    "scroll": {
+      "bench": "Arcanebench",
+      "category": "Arcane_Misc",
+      "output": 3,
+      "inputs": [
+        {
+          "item": [
+            "hytale:Ingredient_Fabric_Scrap_Linen",
+            "hytale:Ingredient_Fabric_Scrap_Linen",
+            "hytale:Ingredient_Fabric_Scrap_Silk",
+            "hytale:Ingredient_Fabric_Scrap_Stormsilk"
+          ],
+          "count": 2
+        },
+        {
+          "item": "essence",
+          "count": [
+            1,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "item": "crystal",
+          "count": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "potion": {
+      "bench": "Alchemybench",
+      "category": "Alchemy_Potions",
+      "output": 3,
+      "inputs": [
+        {
+          "item": "hytale:Ingredient_Water_Essence",
+          "count": 1
+        },
+        {
+          "item": "essence",
+          "count": [
+            1,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "item": "crystal",
+          "count": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "wand": {
+      "bench": "Arcanebench",
+      "category": "Arcane_Misc",
+      "output": 1,
+      "inputs": [
+        {
+          "item": "hytale:Ingredient_Stick",
+          "count": 2
+        },
+        {
+          "item": [
+            "hytale:Ingredient_Bar_Copper",
+            "hytale:Ingredient_Bar_Iron",
+            "hytale:Ingredient_Bar_Thorium",
+            "hytale:Ingredient_Bar_Adamantite"
+          ],
+          "count": 2
+        },
+        {
+          "item": "essence",
+          "count": [
+            2,
+            3,
+            5,
+            8
+          ]
+        },
+        {
+          "item": "crystal",
+          "count": [
+            2,
+            4,
+            6,
+            8
+          ]
+        }
+      ]
+    }
+  }
+}

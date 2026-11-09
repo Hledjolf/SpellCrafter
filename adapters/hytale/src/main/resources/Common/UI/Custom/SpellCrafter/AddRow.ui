@@ -1,0 +1,38 @@
+// A dropdown and a button: "Add a part", "Copy the look from". The button sends the dropdown's value.
+$C = "../Common.ui";
+
+Group {
+  LayoutMode: Left;
+  Anchor: (Top: 6, Bottom: 6);
+
+  Label #Label {
+    Text: "";
+    Anchor: (Width: 200, Right: 12);
+    Style: (...$C.@DefaultLabelStyle, VerticalAlignment: Center, Wrap: true);
+  }
+
+  $C.@DropdownBox #Input {
+    @Anchor = (Right: 4);
+
+    // Vanilla uppercases every dropdown text; keep the case, because values are sent as shown.
+    Style: (
+      ...$C.@DefaultDropdownBoxStyle,
+      LabelStyle: (...$C.@DefaultDropdownBoxLabelStyle, RenderUppercase: false),
+      EntryLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, RenderUppercase: false),
+      NoItemsLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, TextColor: #b7cedd(0.5), RenderUppercase: false),
+      SelectedEntryLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, RenderBold: true, RenderUppercase: false)
+    );
+  }
+
+  Button #Button {
+    Anchor: (Width: 90, Left: 4);
+    LayoutMode: Top;
+    Padding: (Horizontal: 8, Vertical: 7);
+    Style: (...$C.@SecondaryButtonStyle);
+
+    Label #Label {
+      Text: "Add";
+      Style: (...$C.@SmallSecondaryButtonLabelStyle, Wrap: false);
+    }
+  }
+}

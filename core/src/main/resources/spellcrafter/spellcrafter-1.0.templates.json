@@ -1,0 +1,27 @@
+{
+  "format": "spellcrafter.templates",
+  "format_version": "1.0",
+  "note": "The editor's four templates (design/editor.md section 2). Every spell the editor makes starts from one.",
+  "templates": [
+    { "id": "Hledjolf:SpellCrafter/template.bolt", "name": "Bolt",
+      "delivery": { "kind": "projectile", "params": { "range": 24, "speed": 30 } },
+      "slots": [ { "id": "main", "accepts": { "parts_any": ["hit", "damage_over_time"] } } ],
+      "cast": { "time": 1.0, "cooldown": 1.5 },
+      "vessels": ["wand", "scroll"] },
+    { "id": "Hledjolf:SpellCrafter/template.hex", "name": "Hex",
+      "delivery": { "kind": "projectile", "params": { "range": 24, "speed": 30 } },
+      "slots": [ { "id": "main", "accepts": { "harmful": true } } ],
+      "cast": { "time": 1.5, "cooldown": 6.0 },
+      "vessels": ["wand", "scroll"] },
+    { "id": "Hledjolf:SpellCrafter/template.touch", "name": "Touch",
+      "delivery": { "kind": "touch", "params": { "range": 3 } },
+      "slots": [ { "id": "main", "accepts": {} } ],
+      "cast": { "time": 1.0, "cooldown": 6.0 },
+      "vessels": ["wand", "scroll"] },
+    { "id": "Hledjolf:SpellCrafter/template.blessing", "name": "Blessing",
+      "delivery": { "kind": "self", "params": {} },
+      "slots": [ { "id": "main", "accepts": { "harmful": false } } ],
+      "cast": { "time": 1.5, "cooldown": 30.0 },
+      "vessels": ["wand", "scroll", "potion"] }
+  ]
+}

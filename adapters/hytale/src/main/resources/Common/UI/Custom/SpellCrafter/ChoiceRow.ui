@@ -1,0 +1,46 @@
+// A field with a fixed list of values, shown as a dropdown: a stat, a cause, a player. No fixed
+// height: the row grows with a wrapped label or hint.
+$C = "../Common.ui";
+
+Group {
+  LayoutMode: Top;
+  Anchor: (Bottom: 6);
+
+  Group {
+    LayoutMode: Left;
+
+    Label #Label {
+      Text: "";
+      Anchor: (Width: 200, Right: 12);
+      Style: (...$C.@DefaultLabelStyle, VerticalAlignment: Center, Wrap: true);
+    }
+
+    $C.@DropdownBox #Input {
+      @Anchor = (Right: 4);
+
+      // Vanilla uppercases every dropdown text; keep the case, because values are sent as shown.
+      Style: (
+        ...$C.@DefaultDropdownBoxStyle,
+        LabelStyle: (...$C.@DefaultDropdownBoxLabelStyle, RenderUppercase: false),
+        EntryLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, RenderUppercase: false),
+        NoItemsLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, TextColor: #b7cedd(0.5), RenderUppercase: false),
+        SelectedEntryLabelStyle: (...$C.@DefaultDropdownBoxEntryLabelStyle, RenderBold: true, RenderUppercase: false)
+      );
+    }
+  }
+
+  // Under the field, so a long hint wraps across the row's width and the row grows with it. The indent is
+  // the group's padding, not the label's Left anchor: with the anchor, the row was measured for the full
+  // width, the text wrapped narrower, and its second line went under the next row.
+  Group {
+    LayoutMode: Top;
+    Padding: (Left: 212);
+
+    Label #Hint {
+      Text: "";
+      Visible: false;
+      Anchor: (Top: 2);
+      Style: (FontSize: 13, TextColor: #878e9c, Wrap: true);
+    }
+  }
+}

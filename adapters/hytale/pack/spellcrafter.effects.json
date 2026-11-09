@@ -1,0 +1,374 @@
+{
+ "format": "buffeffects.effects",
+ "format_version": "0.5",
+ "mod": {
+  "id": "Hledjolf:SpellCrafter",
+  "name": "SpellCrafter",
+  "version": "0.1.0-samples"
+ },
+ "effects": [
+  {
+   "id": "shock",
+   "name": "Shock",
+   "harmful": true,
+   "duration": {
+    "seconds": 4
+   },
+   "parts": [
+    {
+     "type": "damage_over_time",
+     "cause": "lightning",
+     "amount": 3,
+     "interval": 1
+    }
+   ],
+   "bindings": {
+    "hytale": {
+     "look": {
+      "while_active": {
+       "model_vfx": "Hazard_Electric_Stun"
+      }
+     }
+    }
+   },
+   "category": "lightning",
+   "caller_may_set": {
+    "duration": {
+     "min": 1,
+     "max": 60
+    },
+    "strength": {
+     "min": 0.1,
+     "max": 4.0
+    }
+   }
+  },
+  {
+   "id": "weaken",
+   "name": "Weaken",
+   "harmful": true,
+   "duration": {
+    "seconds": 10
+   },
+   "parts": [
+    {
+     "type": "outgoing",
+     "cause": "physical",
+     "multiplier": 0.75
+    }
+   ],
+   "bindings": {
+    "hytale": {}
+   },
+   "caller_may_set": {
+    "duration": {
+     "min": 1,
+     "max": 60
+    },
+    "strength": {
+     "min": 0.1,
+     "max": 4.0
+    }
+   }
+  },
+  {
+   "id": "silence",
+   "name": "Silence",
+   "harmful": true,
+   "duration": {
+    "seconds": 5
+   },
+   "parts": [
+    {
+     "type": "disable_actions",
+     "actions": [
+      "ability1",
+      "ability2",
+      "ability3"
+     ]
+    }
+   ],
+   "bindings": {
+    "hytale": {}
+   },
+   "caller_may_set": {
+    "duration": {
+     "min": 1,
+     "max": 5
+    }
+   }
+  },
+  {
+   "id": "petrify",
+   "name": "Petrify",
+   "harmful": true,
+   "duration": {
+    "seconds": 3
+   },
+   "parts": [
+    {
+     "type": "lock_movement",
+     "all": true
+    },
+    {
+     "type": "disable_actions",
+     "actions": [
+      "attack",
+      "secondary",
+      "ability1",
+      "ability2",
+      "ability3"
+     ]
+    },
+    {
+     "type": "invulnerable"
+    }
+   ],
+   "bindings": {
+    "hytale": {
+     "look": {
+      "while_active": {
+       "tint_top": "#9a9a9a",
+       "tint_bottom": "#5a5a5a"
+      }
+     }
+    }
+   },
+   "caller_may_set": {
+    "duration": {
+     "min": 1,
+     "max": 3
+    }
+   }
+  },
+  {
+   "id": "flame_bolt",
+   "name": "Flame Bolt",
+   "harmful": true,
+   "duration": {
+    "seconds": 0
+   },
+   "parts": [
+    {
+     "type": "hit",
+     "cause": "fire",
+     "amount": 25
+    }
+   ],
+   "bindings": {
+    "hytale": {}
+   },
+   "category": "fire",
+   "caller_may_set": {
+    "strength": {
+     "min": 0.1,
+     "max": 4.0
+    }
+   }
+  },
+  {
+   "id": "mend",
+   "name": "Mend",
+   "harmful": false,
+   "duration": {
+    "seconds": 0
+   },
+   "parts": [
+    {
+     "type": "instant",
+     "stat": "health",
+     "amount": 25,
+     "unit": "percent"
+    }
+   ],
+   "bindings": {
+    "hytale": {}
+   },
+   "category": "healing",
+   "caller_may_set": {
+    "strength": {
+     "min": 0.1,
+     "max": 3.0
+    }
+   }
+  },
+  {
+   "id": "fire_ward",
+   "name": "Fire Ward",
+   "harmful": false,
+   "duration": {
+    "seconds": 60
+   },
+   "parts": [
+    {
+     "type": "resist",
+     "cause": "fire",
+     "amount": 0.2
+    }
+   ],
+   "bindings": {
+    "hytale": {}
+   },
+   "category": "fire",
+   "caller_may_set": {
+    "strength": {
+     "min": 0.1,
+     "max": 3.0
+    }
+   }
+  },
+  {
+   "id": "battle_fury",
+   "name": "Battle Fury",
+   "harmful": false,
+   "duration": {
+    "seconds": 10
+   },
+   "parts": [
+    {
+     "type": "outgoing",
+     "cause": "physical",
+     "multiplier": 1.25
+    }
+   ],
+   "bindings": {
+    "hytale": {}
+   },
+   "category": "buff",
+   "caller_may_set": {
+    "strength": {
+     "min": 0.1,
+     "max": 4.0
+    }
+   }
+  },
+  {
+   "id": "drain_hit",
+   "name": "Draining Touch",
+   "harmful": true,
+   "duration": {
+    "seconds": 0
+   },
+   "parts": [
+    {
+     "type": "hit",
+     "cause": "physical",
+     "amount": 12
+    }
+   ],
+   "caller_may_set": {
+    "strength": {
+     "min": 0.1,
+     "max": 4.0
+    }
+   },
+   "bindings": {
+    "hytale": {}
+   }
+  },
+  {
+   "id": "shadow_hit",
+   "name": "Shadow Bolt",
+   "harmful": true,
+   "category": "shadow",
+   "duration": {
+    "seconds": 0
+   },
+   "parts": [
+    {
+     "type": "hit",
+     "cause": "shadow",
+     "amount": 25
+    }
+   ],
+   "caller_may_set": {
+    "strength": {
+     "min": 0.1,
+     "max": 4.0
+    }
+   },
+   "bindings": {
+    "hytale": {}
+   }
+  },
+  {
+   "id": "holy_hit",
+   "name": "Smite",
+   "harmful": true,
+   "category": "holy",
+   "duration": {
+    "seconds": 0
+   },
+   "parts": [
+    {
+     "type": "hit",
+     "cause": "holy",
+     "amount": 25
+    }
+   ],
+   "caller_may_set": {
+    "strength": {
+     "min": 0.1,
+     "max": 4.0
+    }
+   },
+   "bindings": {
+    "hytale": {}
+   }
+  },
+  {
+   "id": "magelight",
+   "name": "Magelight",
+   "duration": {
+    "seconds": 300
+   },
+   "reapply": "refresh",
+   "parts": [
+    {
+     "type": "light",
+     "color": "#FFE8B0",
+     "radius": 12
+    }
+   ],
+   "caller_may_set": {
+    "duration": {
+     "min": 10,
+     "max": 600
+    }
+   },
+   "bindings": {
+    "hytale": {}
+   }
+  },
+  {
+   "id": "ghost_form",
+   "name": "Ghost Form",
+   "duration": {
+    "seconds": 6
+   },
+   "reapply": "ignore",
+   "parts": [
+    {
+     "type": "intangible"
+    }
+   ],
+   "caller_may_set": {
+    "duration": {
+     "min": 2,
+     "max": 10
+    }
+   },
+   "bindings": {
+    "hytale": {
+     "look": {
+      "while_active": {
+       "tint_top": "#CFE6FF",
+       "tint_bottom": "#9DBEE8",
+       "see_through": 0.8
+      }
+     }
+    }
+   }
+  }
+ ]
+}

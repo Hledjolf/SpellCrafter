@@ -1,0 +1,8 @@
+// A paragraph on the right: help text, a description, an example. It grows with its text.
+$C = "../Common.ui";
+
+Label {
+  Text: "";
+  Anchor: (Bottom: 8);
+  Style: (FontSize: 14, TextColor: #ffffff(0.85), Wrap: true);
+}
